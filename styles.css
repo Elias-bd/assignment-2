@@ -1,76 +1,146 @@
 .quicksand-normal {
-    font-family: "Quicksand", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* nav styles  */
+
+nav {
+  max-width: 1160px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav div img {
+  width: 100%;
+  height: 100%;
+}
+
+nav div ul {
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+
+
+}
+
+nav ul li {
+  list-style: none;
+  margin-left: 22px;
+}
+
+.school {
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+}
+
+.home {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: orange;
+}
+
+.about {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: skyblue;
+}
+
+.facilities {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #05D4DF;
+}
+
+.admission {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #5D58EF;
+}
+
+.nav-btn button {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: orange;
+  border-radius: 12px;
+  padding: 10px 50px;
+  border: none;
+  margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:576px) {
+  nav div h3 {
+    display: none;
   }
 
-  /* nav styles  */
+  nav ul {
+    display: none;
+  }
 
-  nav{
-    max-width: 1160px;
+  nav button {
+    display: none;
+  }
+
+  .icon {
+    font-size: 50px;
+  }
+
+  nav {
+    max-width: calc(100% - 20px);
     margin: 0 auto;
-    margin-top: 20px;
+    padding: 10px;
     display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-
+    justify-content: space-between;
   }
 
-  nav div{
-    display: flex;
-  }
-  nav div ul{
-    text-align: center;
-  }
 
-  nav ul{
-    display: flex;
-  }
 
-  nav ul li{
-    list-style: none;
-    margin-left: 32px;
-    }
 
-  .school{
-    font-size: 2rem;
-    font-weight: 700;
-    color: black;
+
+
+
+
+
+
+}
+
+
+@media only screen and (min-width:600px) {
+  .icon {
+    display: none;
   }
 
-  .home{
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: orange;
+  hr {
+    display: none;
   }
 
-  .about{
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: skyblue;
-  }
-
-  .facilities{
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #05D4DF;
-  }
-
-  .admission{
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #5D58EF;
-  }
-
-  .nav-btn button{
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #FFFFFF;
-    background-color: orange;
-    border-radius: 12px;
-    padding: 10px 50px;
-    border: none;
-    margin: 0px;
-
-
-  }
+}
