@@ -9,15 +9,68 @@
   nav{
     max-width: 1160px;
     margin: 0 auto;
+    margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
+    text-align: center;
 
   }
 
   nav div{
     display: flex;
   }
+  nav div ul{
+    text-align: center;
+  }
 
   nav ul{
     display: flex;
+  }
+
+  nav ul li{
+    list-style: none;
+    margin-left: 32px;
+    }
+
+  .school{
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+  }
+
+  .home{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: orange;
+  }
+
+  .about{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: skyblue;
+  }
+
+  .facilities{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #05D4DF;
+  }
+
+  .admission{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #5D58EF;
+  }
+
+  .nav-btn button{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: orange;
+    border-radius: 12px;
+    padding: 10px 50px;
+    border: none;
+    margin: 0px;
+
+
   }
