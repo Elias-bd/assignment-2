@@ -136,7 +136,7 @@ nav ul li {
 /* standard curriculum styles  */
 
 .curriculum {
-  max-width: 1160px;
+  max-width: 1440px;
   margin: 0 auto;
   background-image: url(assets/bg.png);
 }
@@ -149,7 +149,11 @@ nav ul li {
 }
 
 .card-container {
+  max-width: 1160px;
+  margin: 0 auto;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
   margin-bottom: 100px;
 }
@@ -241,7 +245,15 @@ nav ul li {
 
 /* our stories styles  */
 
-.story-title{
+.stories {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 100px;
+  background-image: url(assets/bg.png), linear-gradient(0deg, #ebcd9a, #FFFFFF);
+
+}
+
+.story-title {
   font-size: 2.9rem;
   font-weight: 700;
   color: #000000;
@@ -250,18 +262,42 @@ nav ul li {
 }
 
 
-.stories-container{
+.stories-container {
   max-width: 1160px;
   margin: 0 auto;
-  
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+
 }
 
-.stories-banner{
+/* stories banner styles  */
+
+.stories-banner {
+  position: relative;
   width: 540px;
+  height: 620px;
+  border-radius: 16px;
+  background-color: white;
+  filter: drop-shadow(0px 0px 28px rgba(0, 0, 0, 0.09));
 
 }
 
-.s-banner-btn{
+.stories-banner img {
+  width: 100%;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+
+.s-banner-content {
+  padding: 34px 38px;
+  padding-top: 0px;
+}
+
+.s-banner-btn {
+  position: absolute;
   font-size: 1rem;
   font-weight: 500;
   color: #FFFFFF;
@@ -269,28 +305,55 @@ nav ul li {
   border-radius: 45px;
   padding: 14px 16px;
   border: none;
+  margin: -60px 200px 0px 0px;
 
 }
 
-.s-title{
+.s-title {
   font-size: 1.5rem;
   font-weight: 700;
   color: #000000;
 }
 
-.s-card{
-  width: 290px;
+
+/* card container styles  */
+
+.stories-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.s-card {
+  width: 300px;
+  position: relative;
+  border-radius: 16px;
+  background-color: white;
+  filter: drop-shadow(0px 0px 28px rgba(0, 0, 0, 0.09));
 
 }
 
-.s-subtitle{
+.s-subtitle {
   font-size: 1rem;
   font-weight: 500;
   color: #666666;
 
 }
 
-.s-card-btn{
+.s-card-img {
+  width: 100%;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+
+.s-card-content {
+  padding: 18px 38px;
+  padding-top: 0px;
+
+}
+
+.s-card-btn {
+  position: absolute;
   font-size: 1rem;
   font-weight: 500;
   color: #FFFFFF;
@@ -298,15 +361,34 @@ nav ul li {
   border-radius: 45px;
   padding: 10px 18px;
   border: none;
-
-
+  margin: -40px 0px 0px 0px;
 }
 
-
-.sc-subtitle{
+.sc-subtitle {
   font-size: 1rem;
   font-weight: 700;
   color: #000000;
+  padding-top: 20px;
+
+}
+
+/* last button styles  */
+
+.last-btn {
+  width: 190px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+.last-btn button {
+  text-align: center;
+  background-color: black;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  padding: 10px 45px;
+  border-radius: 12px;
+  border: none;
 
 }
 
@@ -348,11 +430,12 @@ nav ul li {
   }
 
   hr {
-    color: orange;
+    width: 100%;
+    border: 1px solid orange;
   }
 
   nav {
-    max-width: calc(100% - 20px);
+    max-width: 357px;
     margin: 0 auto;
     padding: 10px;
     display: flex;
@@ -366,7 +449,7 @@ nav ul li {
   }
 
   .banner-img img {
-    width: 100%;
+    width: 357px;
     margin: 0 auto;
   }
 
@@ -389,10 +472,9 @@ nav ul li {
   }
 
   .curriculum {
-    max-width: 100%;
+    max-width: 400px;
     margin: 0 auto;
     margin-top: 50px;
-
   }
 
   .curriculum-title {
@@ -434,6 +516,42 @@ nav ul li {
     display: none;
   }
 
+  /* our stories styles  */
+  .stories {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .story-title {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+
+  .stories-banner {
+    display: none;
+  }
+
+  .s-card {
+    width: 175px;
+  }
+
+  .sc-subtitle {
+    font-size: 0.6rem;
+    font-weight: 700;
+    padding-top: 10px;
+
+  }
+
+  .s-card-btn {
+
+    font-size: 0.6rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    margin: -25px 0px 0px 0px;
+  }
+
 
 
 
@@ -452,7 +570,7 @@ nav ul li {
 }
 
 
-@media only screen and (min-width:600px) {
+@media only screen and (min-width:577px) {
   .icon {
     display: none;
   }
